@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/word-scramble.css">
+    <title>Word Scramble Test - Page 2</title>
+</head>
+<body>
+    
+
+    <div class="game-container">
+        <div class="word-guess-container">
+            <div class="back-to-map-container">
+                <a href="./word-scramble.html">
+                    <img src="../assets/arrow-left-solid.svg" alt="Back arrow">
+                    Map
+                </a>
+            </div>
+
+            <h1 id="puzzle-number">Puzzle 1</h1>
+            <div class="word-guess-row">
+                <div class="letter-tile" id="letter-tile1"></div>
+                <div class="letter-tile" id="letter-tile2"></div>
+                <div class="letter-tile" id="letter-tile3"></div>
+                <div class="letter-tile" id="letter-tile4"></div>
+                <div class="letter-tile" id="letter-tile5"></div>
+                <button id="backspace-btn">
+                    <img src="./assets/backspace-arrow.svg" alt="Backspace arrow">
+                </button>
+            </div>
+        </div>
+
+        <div class="scrambled-letters-container">
+            <h2>Tap to unscramble the letters</h2>
+            <div class="scrambled-letters-row">
+                <button class="letter-btn" id="letter-btn1"></button>
+                <button class="letter-btn" id="letter-btn2"></button>
+                <button class="letter-btn" id="letter-btn3"></button>
+                <button class="letter-btn" id="letter-btn4"></button>
+                <button class="letter-btn" id="letter-btn5"></button>
+            </div>
+
+            <button id="submit-guess-btn">Submit</button>
+            <div class="skip-word-btn-container">
+                <button id="skip-word-btn">
+                    Skip 
+                    <img src="./assets/skip-arrow.svg" alt="Skip Arrow">
+                </button>
+            </div>
+            
+        </div>
+    </div>
+
+
+    <!-- Welcome Modal -->
+    <div class="modal" id="welcome-modal">
+        <div class="modal-content">
+            <img src="./assets/word-scramble.svg" alt="Word Scramble Graphic">
+
+            <div class="modal-content-text">
+                <h1>Welcome</h1>
+                <p>Have some fun by playing our word scambler. See how many outdoor vocabulary words you can guess.</p>
+            </div>
+
+            <button id="close-modal-btn">Continue</button>
+        </div>
+    </div>
+
+    <!-- Success Modal -->
+    <div class="modal" id="success-modal">
+        <div class="modal-content">
+            <img src="./assets/thumbs-up.svg" alt="Thumbs Up Graphic">
+
+            <div class="modal-content-text">
+                <h1>Awesome Job!</h1>
+                <p>You guessed the word correctly! You are crushing it!</p>
+            </div>
+
+            <button id="next-word-btn">Next Word</button>
+        </div>
+    </div>
+
+    <!-- Try Again Modal -->
+    <div class="modal" id="try-again-modal">
+        <div class="modal-content">
+            <img src="./assets/thumbs-down.svg" alt="Thumbs Down Graphic">
+
+            <div class="modal-content-text">
+                <h1>So Close!</h1>
+                <p>You guessed the word incorrectly. You are almost there. Don't give up!</p>
+            </div>
+
+            <button id="try-again-btn">Try Again</button>
+        </div>
+    </div>
+
+    <!-- Score Modal -->
+    <div class="modal" id="score-modal">
+        <div class="modal-content">
+            <img src="./assets/trophy.svg" alt="Thumbs Down Graphic">
+
+            <div class="modal-content-text">
+                <h1 id="final-score"></h1>
+                <p>Thank you for playing! Feel free to click the button below and try again!</p>
+            </div>
+
+            <button id="refresh-btn">Play Again</button>
+        </div>
+    </div>
+
+    <script src="./js/word-scramble.js"></script>
+</body>
+</html>
