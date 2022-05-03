@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/cave-cutout.css">
+    <title>Timp Cave Smart Trail - Timp Cave</title>
+</head>
+<body>
+    <div class="back-to-map-container">
+        <a href="./cave-cutout.html">
+            <img src="../assets/arrow-left-solid.svg" alt="Back arrow">
+            Map
+        </a>
+    </div>
+
+    <p class="cave-text">Select the different locations to learn more about the cave system</p>
+
+    <!-- Cave background with markers -->
+    <div class="cave-container">
+        <img src="./assets/Cave.svg" alt="Cave Background" class="cave-background">
+        
+        <a href="./timp-cave.html" id="timp-marker">
+            <img src="./assets/big-marker.svg" alt="Big location marker icon">
+        </a>
+        <a href="./middle-cave.html" id="middle-marker">
+            <img src="./assets/marker.svg" alt="Small location marker icon">
+        </a>
+        <a href="./hansen-cave.html" id="hansen-marker">
+            <img src="./assets/marker.svg" alt="Small location marker icon">
+        </a>
+    </div>
+
+    <!-- Slideshow -->
+    <div class="slideshow-container">
+        <div class="slides slide-fade">
+            <div class="image-heading">Timpanogos Cave</div>
+            <div class="image-text">Timpanogos Cave National Monument was created in 1922 to protect these caves for their “unusual scientific interest”. Since then, they have been studied, photographed, and visited by thousands of people with the hope that each generation will marvel at the delicate cave formations and leave them for the next group to also study and explore. What do you hope the next generation finds when they come here?</div>
+            <img src="./assets/timp-cave1.jpg" alt="Kids exploring Timp Cave">
+        </div>
+
+        <div class="slides slide-fade">
+            <div class="image-heading">Timpanogos Cave</div>
+            <div class="image-text">Move carefully when underground! Thousands of years of water dripping created these wonders that surround you and some can be broken by the simple brush of a sleeve. See if you can count the different types of cave formations as you carefully move through your tour.</div>
+            <img src="./assets/timp-cave2.jpg" alt="Image inside Timp Cave">
+        </div>
+
+        <div class="slides slide-fade">
+            <div class="image-heading">Timpanogos Cave</div>
+            <div class="image-text">See if you can find the crystal-clear water of Hidden Lake while on your tour. Calcite minerals can float on the surface of these still waters clustering together and creating rafts. Only the most observant can find them. Can you?</div>
+            <img src="./assets/timp-cave3.jpg" alt="Timp Cave Formations">
+        </div>
+
+        <a class="prev">❮</a>
+        <a class="next">❯</a>
+
+        <div class="dot-container">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </div>
+
+
+    <!-- Modal -->
+    <div class="modal" id="welcome-modal">
+        <div class="modal-content">
+            <img src="./assets/Cave-Icon.svg" alt="Cave graphic icon">
+
+            <div class="modal-content-text">
+                <h1>Welcome</h1>
+                <p>Get a different perspective on Timp Cave by learing about the different sections of the cave itself. </p>
+            </div>
+
+            <button id="close-modal-btn">Continue</button>
+        </div>
+    </div>
+
+    <script src="./js/cave-cutout.js"></script>
+</body>
+</html>
