@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/trail-birds.css">
+    <title>Timp Cave Smart Trail - Trail Birds</title>
+</head>
+<body>
+    <div class="back-to-map-container">
+        <a href="./trail-birds.html">
+            <img src="../assets/arrow-left-solid-green.svg" alt="Back arrow">
+            Map
+        </a>
+    </div>
+
+    <p class="bird-instructions">Tap a bird to learn about them and hear their call.</p>
+
+    <div class="birds-container">
+        <div class="bird">
+            <a href="#">
+                <img src="./assets/falcon-silhouette.svg" alt="Silhouette of Peregrine Falcon">
+            </a>
+        </div>
+        <div class="bird">
+            <a href="#">
+                <img src="./assets/jay-silhouette.svg" alt="Silhouette of Steller's Jay">
+            </a>
+        </div>
+        <div class="bird">
+            <a href="#">
+                <img src="./assets/junco-silhouette.svg" alt="Silhouette of Dark-Eyed Junco">
+            </a>
+        </div>
+        <div class="bird">
+            <a href="#">
+                <img src="./assets/tanager-silhouette.svg" alt="Silhouette of Western Tanager">
+            </a>
+        </div>
+        <div class="bird">
+            <a href="#">
+                <img src="./assets/wren-silhouette.svg" alt="Silhouette of Canyon Wren">
+            </a>
+        </div>
+        <div class="bird">
+            <a href="#">
+                <img src="./assets/townsend-silhouette.svg" alt="Silhouette of Townsend's Solitaire">
+            </a>
+        </div>
+    </div>
+    
+    <!-- Welcome Modal -->
+    <div class="modal" id="welcome-modal">
+        <div class="modal-content">
+            <img src="./assets/Bird.svg" alt="Bird graphic">
+
+            <div class="modal-content-text">
+                <h1>Welcome</h1>
+                <p>Learn about a few of the many birds you can spot along the Timpanogos Cave Trail.</p>
+                <p class="modal-note"><b>NOTE:</b> Please make sure silent mode is <b>off</b> and your volume is turned <b>up</b> to hear the bird calls!</p>
+            </div>
+
+            <button id="close-modal-btn">Continue</button>
+        </div>
+    </div>
+
+    <script src="./js/trail-birds.js"></script>
+</body>
+</html>
