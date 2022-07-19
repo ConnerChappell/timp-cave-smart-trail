@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/trail-birds.css">
+    <title>Timp Cave Smart Trail - Trail Birds: Canyon Wren</title>
+</head>
+<body>
+    <div class="back-to-map-container">
+        <a href="../trail-birds3.html">
+            <img src="../../assets/arrow-left-solid-green.svg" alt="Back arrow">
+            Birds
+        </a>
+    </div>
+
+    <div class="bird-container">
+        <h1>Canyon Wren</h1>
+        <img src="../assets/birds/canyon-wren.svg" alt="Canyon Wren" class="bird">
+        <p class="bird-info">Look closely to the cliff walls, this tiny songbird can be tough to spot as it clings to rocky cliffs, but its song is a very happy, musical call. Can you hear him near the cave enterance?</p>
+        <button class="speaker-button" id="wren-call-btn">
+            <img src="../assets/speaker.svg" alt="Speaker icon">
+        </button>
+    </div>
+
+    <audio src="../assets/bird-sounds/canyon_wren.mp3" autoplay id="wren-call"></audio>
+
+    <script>
+        const wrenCallBtn = document.querySelector('#wren-call-btn')
+        const wrenCall = document.querySelector('#wren-call')
+        wrenCallBtn.addEventListener('click', () => {
+            wrenCall.play()
+        })
+    </script>
+</body>
+</html>
