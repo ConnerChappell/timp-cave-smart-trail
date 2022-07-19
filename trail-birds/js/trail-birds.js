@@ -1,21 +1,12 @@
 ///////////////////////// selectors
-const body = document.querySelector('body')
-const modal = document.querySelector('#welcome-modal')
-const closeModalBtn = document.querySelector('#close-modal-btn')
+const falconCallBtn = document.querySelector('#falcon-call-btn')
+const falconCall = document.querySelector('#falcon-call')
 
 
 ///////////////////////// functions
 
 
-
 ///////////////////////// event listeners
-
-// click event listener that closes welcome modal
-closeModalBtn.addEventListener('click', () => {
-    modal.classList.add('fade-out')
-    
-    setTimeout(function() {
-        modal.style.display = 'none'
-        modal.classList.remove('fade-out')
-    }, 300)
+falconCallBtn.addEventListener('click', () => {
+    falconCall.play()
 })

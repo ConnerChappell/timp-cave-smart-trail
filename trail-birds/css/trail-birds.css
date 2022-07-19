@@ -56,6 +56,10 @@ body {
     font-size: 24px;
     margin: 0;
 }
+.note-span {
+    color: #1E8A49;
+    font-weight: bold;
+}
 .modal-content-text .modal-note {
     margin-top: .5rem;
 }
@@ -109,7 +113,8 @@ body {
     text-align: center;
 }
 
-.birds-container {
+/* bird silhouette styles */
+.silhouettes-container {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -117,12 +122,43 @@ body {
     flex-wrap: wrap;
     margin: 2rem 0 6rem 0;
 }
-.bird {
+.silhouette {
     margin: 0 0 100px 0;
     width: 120px;
 }
-.bird img {
+.silhouette img {
     width: 100%;
+}
+
+/* individual bird page styles */
+.bird-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.bird-container h1 {
+    color: #000;
+}
+.bird {
+    width: 70%;
+}
+.bird-info {
+    color: #000;
+    font-size: 20px;
+    line-height: 2.5rem;
+}
+.speaker-button {
+    width: 54px;
+    height: 54px;
+    background-color: #000;
+    border: 0;
+    border-radius: 50%;
+    box-shadow: 0px 4px 4px 0px #00000040;
+}
+.speaker-button img {
+    width: 85%;
+    height: 100%;
 }
 
 
