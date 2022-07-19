@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/trail-birds.css">
+    <title>Timp Cave Smart Trail - Trail Birds: Western Tanager</title>
+</head>
+<body>
+    <div class="back-to-map-container">
+        <a href="../trail-birds3.html">
+            <img src="../../assets/arrow-left-solid-green.svg" alt="Back arrow">
+            Birds
+        </a>
+    </div>
+
+    <div class="bird-container">
+        <h1>Western Tanager</h1>
+        <img src="../assets/birds/western-tanager.svg" alt="Western Tanager" class="bird">
+        <p class="bird-info">Have you seen a bright yellow bird flying around the trail? They also have red on their faces, but just how red it is comes from the bugs they eat.</p>
+        <button class="speaker-button" id="tanager-call-btn">
+            <img src="../assets/speaker.svg" alt="Speaker icon">
+        </button>
+    </div>
+
+    <audio src="../assets/bird-sounds/tanager.mp3" autoplay id="tanager-call"></audio>
+
+    <script>
+        const tanagerCallBtn = document.querySelector('#tanager-call-btn')
+        const tanagerCall = document.querySelector('#tanager-call')
+        tanagerCallBtn.addEventListener('click', () => {
+            tanagerCall.play()
+        })
+    </script>
+</body>
+</html>
