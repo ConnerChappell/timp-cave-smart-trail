@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/trail-birds.css">
+    <title>Timp Cave Smart Trail - Trail Birds: Dark Eyed Junco</title>
+</head>
+<body>
+    <div class="back-to-map-container">
+        <a href="../trail-birds3.html">
+            <img src="../../assets/arrow-left-solid-green.svg" alt="Back arrow">
+            Birds
+        </a>
+    </div>
+
+    <div class="bird-container">
+        <h1>Dark Eyed Junco</h1>
+        <img src="../assets/birds/dark-eyed-junco.svg" alt="Dark Eyed Junco" class="bird">
+        <p class="bird-info">Juncos love the seeds they find in American Fork Canyon. While the summer is fun for them, they don't seem to mind the winter here either. They will fluff up with 30% more feathers to stay warm. You can find them here and in almost any backyard in North America. </p>
+        <button class="speaker-button" id="junco-call-btn">
+            <img src="../assets/speaker.svg" alt="Speaker icon">
+        </button>
+    </div>
+
+    <audio src="../assets/bird-sounds/junco.mp3" id="junco-call"></audio>
+
+    <script>
+        const juncoCallBtn = document.querySelector('#junco-call-btn')
+        const juncoCall = document.querySelector('#junco-call')
+        juncoCallBtn.addEventListener('click', () => {
+            juncoCall.play()
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/trail-birds.css">
+    <title>Timp Cave Smart Trail - Trail Birds: Stellar's Jay</title>
+</head>
+<body>
+    <div class="back-to-map-container">
+        <a href="../trail-birds3.html">
+            <img src="../../assets/arrow-left-solid-green.svg" alt="Back arrow">
+            Birds
+        </a>
+    </div>
+
+    <div class="bird-container">
+        <h1>Stellar's Jay</h1>
+        <img src="../assets/birds/stellars-jay.svg" alt="Stellar's Jay" class="bird">
+        <p class="bird-info">The Steller's Jay spends the summer eating bugs and lizards. They plan for the winter by hiding seeds, berries, and acorns all over the forest. They often cover their cache with leaves then forgot where they are. The plants around you maybe growing because of a forgetful Steller's Jay.</p>
+        <button class="speaker-button" id="jay-call-btn">
+            <img src="../assets/speaker.svg" alt="Speaker icon">
+        </button>
+    </div>
+
+    <audio src="../assets/bird-sounds/jay.mp3" id="jay-call"></audio>
+
+    <script>
+        const jayCallBtn = document.querySelector('#jay-call-btn')
+        const jayCall = document.querySelector('#jay-call')
+        jayCallBtn.addEventListener('click', () => {
+            jayCall.play()
+        })
+    </script>
+</body>
+</html>

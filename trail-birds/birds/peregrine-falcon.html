@@ -26,6 +26,12 @@
 
     <audio src="../assets/bird-sounds/falcon.mp3" id="falcon-call"></audio>
 
-    <script src="../js/trail-birds.js"></script>
+    <script>
+        const falconCallBtn = document.querySelector('#falcon-call-btn')
+        const falconCall = document.querySelector('#falcon-call')
+        falconCallBtn.addEventListener('click', () => {
+            falconCall.play()
+        })
+    </script>
 </body>
 </html>
